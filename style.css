@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: underrated;
+    src: url('./UNDERRATED-UltraBold Personal Use.otf');
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+}
+body{
+    font-family: underrated;
+}
+p{
+    font-size: larger;
+    font-weight: lighter;
+    color:darkslateblue;
+}
+.colour{
+    width: 800px;
+    display: flex;
+    margin-inline: auto;
+    
+/* margin-right: auto; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:beige;
+    border-radius: 5px;
+    text-align: center;
+}
+
+[class*='color']{
+    width: 130px;
+    height: 120px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    margin: 1.5rem;
+    text-align: center ;
+    align-content: center;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.1);
+    transition: 1s ease-in-out;
+    display: block;
+}
+[class*='color']:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
